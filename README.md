@@ -20,7 +20,9 @@ Create a new folder or repository for this project. Upload all of the supporting
 
 Submit the link to the newly created Bootstrap page. it is easiest to just name it index.html but as long as the link works you can use any filename. 
 
+______________________________________________________________________________________
 
+#project 1.2 
 
  Create the application by following the instructions below. After you get it working you will then modify it to fit into your project site.
  
