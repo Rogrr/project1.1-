@@ -19,3 +19,13 @@ You will add the activity 6 Income tax application to your Bootstrap page. (if y
 Create a new folder or repository for this project. Upload all of the supporting files. Make sure it it pushed to pages and you have tested it. 5pts
 
 Submit the link to the newly created Bootstrap page. it is easiest to just name it index.html but as long as the link works you can use any filename. 
+
+
+
+ Create the application by following the instructions below. After you get it working you will then modify it to fit into your project site.
+ 
+• Create an 2nd page for your project. Create a link on your menu for the new page. Make sure the new page uses the same layout as your home page but will have different content. This will contain 3 areas that will have headings to click on to expand and collapse. You will pick the topics and create the content. Each section should have a minimum of 5 sentences.
+
+• Create a link on your menu for the new page. Make sure the new page uses the same layout as your home page with a consistent navigation to navigate to your 2 project pages.
+
+• You will need to link the js and css files to the newly created page. You may need to change the css file to fit with your design. Remember to link the css file after the bootstrap css link.
