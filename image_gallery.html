@@ -4,26 +4,26 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Image Gallery</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Add this line for jQuery -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="image_gallery.css">
-    <style>
+  <style>
     .fakeimg {
-    height: 200px;
-    background: #aaa;
+      height: 200px;
+      background: #aaa;
     }
-    </style>
+  </style>
 </head>
 
 <body>
     
-<!-- title header  -------------------------------------------------->
-<div class="p-5 bg-primary text-white text-center">
-    <h1>Where we learn </h1>
+  <!-- title header  -------------------------------------------------->
+  <div class="p-5 bg-primary text-white text-center">
+    <h1>Where we learn</h1>
     <p></p> 
   </div>
+
   <!-- Top bar nav  -------------------------------------------------->
   <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
     <div class="container-fluid">
@@ -35,7 +35,10 @@
           <a class="nav-link" href="expandCollapse.html">2<sup>nd</sup> Page</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="image_gallery.html">3<sup>rd</sup>Page </a>
+          <a class="nav-link" href="image_gallery.html">3<sup>rd</sup> Page</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="image_swap.html">4<sup>th</sup> Page</a>
         </li>
         <!-- <li class="nav-item">
           <a class="nav-link disabled" href="#">Disabled</a>
@@ -43,98 +46,76 @@
       </ul>
     </div>
   </nav>
-  <!-- bottom side bar nav  -------------------------------------------------->
+
+  <!-- Main content  -------------------------------------------------->
   <div class="container mt-5">
     <div class="row">
-      <div class="col-sm-4">
-        <h2>Hola </h2>
-        <h5> Classmates and Community  </h5>
-        <div class="container-fluid" ><img src="vecteezy_group-of-multicultural-students-happy-young-boys-and-girls_16245784.jpg"  alt="itsDawg" class="img-fluid" ></div>
-        <h6>Vector CC vecteezy.com </h6>
-        <p>One thing that makes us a community is that we contribute to the experience of coding, whether in class or online. I wanted to dedicate this page as a reminder that there is no set time or place to code. Even though this is a remote class, we still pass by each other and cross paths through our community, and influence our projects online. </p>
-
       
-        <h3 class="mt-4"></h3>
-        <p></p>
+      <!-- Sidebar content -->
+      <div class="col-sm-4">
+        <h2>Hola</h2>
+        <h5>Classmates and Community</h5>
+        <div class="container-fluid">
+          <img src="vecteezy_group-of-multicultural-students-happy-young-boys-and-girls_16245784.jpg" alt="itsDawg" class="img-fluid">
+        </div>
+        <h6>Vector CC vecteezy.com</h6>
+        <p>
+          One thing that makes us a community is that we contribute to the experience of coding, whether in class or online. 
+          I wanted to dedicate this page as a reminder that there is no set time or place to code. Even though this is a 
+          remote class, we still cross paths through our community and influence our projects online.
+        </p>
         <ul class="nav nav-pills flex-column">
           <li class="nav-item">
             <a class="nav-link active" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">2<sup>nd</sup> Page </a>
+            <a class="nav-link" href="expandCollapse.html">2<sup>nd</sup> Page</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">3<sup>rd</sup>Page</a>
+            <a class="nav-link" href="image_gallery.html">3<sup>rd</sup> Page</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="image_swap.html">4<sup>th</sup> Page</a>
           </li>
           <!-- <li class="nav-item">
             <a class="nav-link disabled" href="#">Disabled</a>
-          </li>  -->
+          </li> -->
         </ul>
         <hr class="d-sm-none">
       </div>
-  
-  
-  <!-- Added expand collapse----------------------------------------------------------------------------------------------------->
-      <div class="col-sm-8" >
+
+      <!-- Main gallery content -->
+      <div class="col-sm-8">
         <div id="jdom">
-  
-            <h1>When We Code </h1>
-            <ul id="image_list">
-                <li><a href="1920-asian-woman-working-at-the-office-woman-using-laptop-computer-on-desk-at-office.jpg" title="When we are at Work or School"> 🗄️</a></li>
-                <li><a href="1920-smiling-attractive-girl-working-at-the-computer-sitting-at-the-table.JPG" title="During the Day">🌞 </a></li>
-                <li><a href="1920-man-working-on-computer-in-dark-startup-office.jpg" title="During the night">🌚</a></li>
-                <li><a href="1920-pensive-afro-american-man-sits-at-desk-at-home-watches-online-video-class-or-webinar-on-computer.jpg" title="When we are solo and mobile ">👨🏽</a></li>
-                <li><a href="1920-mixed-race-family-sharing-time-in-living-room-caucasian-father-using-notebook-computer-to-work-and-half-thai-playing-and-painting-under-desk-while-asian-mother-with-laptop-working-her-job-on-sofa.jpg" title="Or Home with our family ">👩🏼‍🤝‍👨🏽</a></li>
-                
-                
-            </ul>
-            <h2 id="caption">Coding can be anywhere or anytime </h2>
-            <p id="gallery">
-                <img src="640-top-view-of-male-hands-holding-a-coffee-cup-laptop-with-office-supplies-on-wooden-desk.jpg" alt="Image Gallery area" id="image">
-            </p> 
-            <p> Photos CC vecteezy.com</p>
-            <p><strong>The time and place to code is different for everyone</strong> The most important part is always to just to start.</p>
-  
-          </div>
-          
-          <br>
-        
-  <!------------------------------------------------------------------------------------------------------->
+          <h1>When We Code</h1>
+          <ul id="image_list">
+            <li><a href="1920-asian-woman-working-at-the-office-woman-using-laptop-computer-on-desk-at-office.jpg" title="When we are at Work or School"> 🗄️</a></li>
+            <li><a href="1920-smiling-attractive-girl-working-at-the-computer-sitting-at-the-table.JPG" title="During the Day">🌞</a></li>
+            <li><a href="1920-man-working-on-computer-in-dark-startup-office.jpg" title="During the night">🌚</a></li>
+            <li><a href="1920-pensive-afro-american-man-sits-at-desk-at-home-watches-online-video-class-or-webinar-on-computer.jpg" title="When we are solo and mobile">👨🏽</a></li>
+            <li><a href="1920-mixed-race-family-sharing-time-in-living-room-caucasian-father-using-notebook-computer-to-work-and-half-thai-playing-and-painting-under-desk-while-asian-mother-with-laptop-working-her-job-on-sofa.jpg" title="Or Home with our family">👩🏼‍🤝‍👨🏽</a></li>
+          </ul>
+          <h2 id="caption">Coding can be anywhere or anytime</h2>
+          <p id="gallery">
+            <img src="640-top-view-of-male-hands-holding-a-coffee-cup-laptop-with-office-supplies-on-wooden-desk.jpg" alt="Image Gallery area" id="image">
+          </p>
+          <p>Photos CC vecteezy.com</p>
+          <p><strong>The time and place to code is different for everyone.</strong> The most important part is always just to start.</p>
+        </div>
+      </div>
+
     </div>
   </div>
+
+  <!-- Footer -->
   <div class="mt-5 p-4 bg-dark text-white text-center">
-      <p></p>
+    <p></p>
   </div>
-  
 
-
-
-
-
-
-
-
-
-	<!-- <main>
-		<h1>Where We Code </h1>
-		<ul id="image_list">
-			<li><a href="1920-asian-woman-working-at-the-office-woman-using-laptop-computer-on-desk-at-office.jpg" title="When we are in the Office"> Work</a></li>
-			<li><a href="1920-smiling-attractive-girl-working-at-the-computer-sitting-at-the-table.JPG" title="During the Day">Day </a></li>
-            <li><a href="1920-man-working-on-computer-in-dark-startup-office.jpg" title="During the night">Night</a></li>
-			<li><a href="1920-mixed-race-family-sharing-time-in-living-room-caucasian-father-using-notebook-computer-to-work-and-half-thai-playing-and-painting-under-desk-while-asian-mother-with-laptop-working-her-job-on-sofa.jpg" title="With our family ">Family</a></li>
-			<li><a href="1920-pensive-afro-american-man-sits-at-desk-at-home-watches-online-video-class-or-webinar-on-computer.jpg" title="When we are solo ">Solo</a></li>
-			
-		</ul>
-		<h2 id="caption">Coding can be anywhere or anytime </h2>
-		<p id="gallery">
-			<img src="640-top-view-of-male-hands-holding-a-coffee-cup-laptop-with-office-supplies-on-wooden-desk.jpg" alt="Image Gallery area" id="image">
-		</p> -->
-
-    
-	<!-- </main> -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-   	<script src="image_galleryBoot.js"></script>  
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+  <script src="image_galleryBoot.js"></script>  
 </body>
 </html>
