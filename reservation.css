@@ -17,6 +17,8 @@ fieldset {
     margin-top: 1em;
     margin-bottom: 1em;
     padding: .5em;
+    border: 1px solid #ccc; /* Restore the grey border */
+    border-radius: 5px; /* Optional: Add rounded corners */	
 }
 legend {
     color: blue;
