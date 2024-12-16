@@ -68,7 +68,7 @@ $(document).ready(() => {
         // Submit handler for when the form is valid
         submitHandler: function (form) {
             // Form is valid, redirecting to response.html
-            form.action = "response.html"; // Set the form action to the next page
+            form.action = "responseBootstrap.html";// Set the form action to the next page
             form.submit(); // Submit the form
         }
     });
