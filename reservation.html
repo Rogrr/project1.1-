@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>reservation form </title>
+  <!-- Add Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Add jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Add Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="reservation.css" />
+  <style>
+    /* Placeholder style for testing */
+    .fakeimg {
+      height: 200px;
+      background: #aaa;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Title Header -->
+  <div class="p-5 bg-primary text-white text-center">
+    <h1>Lets Network</h1>
+    <p></p> 
+  </div>
+  
+  <!-- Top Navigation Bar -->
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container-fluid">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="expandCollapse.html">2<sup>nd</sup> Page</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="image_gallery.html">3<sup>rd</sup> Page</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="image_swap.html">4<sup>th</sup> Page</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="reservation.html">5<sup>th</sup> Page</a>
+          </li>
+        <!-- Placeholder for a disabled link -->
+        <!-- <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li> -->
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Container -->
+  <div class="container mt-5">
+    <div class="row">
+      <!-- Sidebar -->
+      <div class="col-sm-4">
+        <h2>Hard work Pays off so Lets Network!</h2>
+        <h5></h5>
+        <div class="container-fluid">
+          <img src="vecteezy_delicious-pizza-icon-cartoon-illustration_24818457.jpg" alt="pizza" class="img-fluid">
+        </div>
+        <h6>Vector CC vecteezy.com</h6>
+        <br>
+        <p>Networking, I believe, is a soft skill that can be worth more than actual coding skills. If people like working with you then they help you make it work. </p>
+        <br>
+        <p> 
+            So peers lets keep in touch and celebrate after finals because you never know who or when they might need your help or vice versa. Let's plan a little pizza party to celebrate our hard work.🍕</p>
+        <br>
+    
+        <!-- Sidebar Navigation -->
+        <ul class="nav nav-pills flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="expandCollapse.html">2<sup>nd</sup> Page</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="image_gallery.html">3<sup>rd</sup> Page</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="image_swap.html">4<sup>th</sup> Page</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="reservation.html">5<sup>th</sup> Page</a>
+          </li>
+          <!-- Placeholder for a disabled link -->
+          <!-- <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li> -->
+        </ul>
+        <hr class="d-sm-none">
+      </div>
+
+      <!-- Main Content -->
+      <div class="col-sm-8">
+        <div id="jdom">
+          <div class="formDiv">
+            <h1>Reservation Request</h1>
+            <form action="responseBootstrap.html" method="get"
+                name="reservation_form" id="reservation_form">
+                <fieldset>
+                    <legend>General Information</legend>
+                    <div>
+                        <label for="arrival_date">Arrival date:</label>
+                        <input type="text" name="arrival_date" id="arrival_date" placeholder="00/00/00" autofocus>
+                        <span class="error">*</span><!-- Error message will be inserted here -->
+                    </div>
+                    <div>
+                        <label for="nights">Nights:</label>
+                        <input type="text" name="nights" id="nights">
+                        <span class="error">*</span><!-- Error message will be inserted here -->
+                    </div>
+                    <div>
+                        <label>Adults:</label>
+                        <select name="adults" id="adults">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>Children:</label>
+                        <select name="children" id="children">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Preferences</legend>
+                    <div>
+                        <label>Pizza Place:</label>
+                        <input type="radio" name="room" id="standard" class="left" checked>BJ's Restaurant
+                        <input type="radio" name="room" id="business" class="left">Dominoes
+                        <input type="radio" name="room" id="suite" class="left last">Shakeys
+                    </div>
+                    <div>
+                        <label>Prefered Time of Day type:</label>
+                        <input type="radio" name="bed" id="king" class="left" checked>Afternoon
+                        <input type="radio" name="bed" id="double" class="left last">Evening 
+                    </div>
+                    <div>
+                        <input type="checkbox" name="smoking" id="smoking">Are you a Recruiter?
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name">
+                        <span class="error">*</span><!-- Error message will be inserted here -->
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="text" name="email" id="email">
+                        <span class="error">*</span><!-- Error message will be inserted here -->
+                    </div>
+                    <div>
+                        <label for="phone">Phone:</label>
+                        <input type="text" name="phone" id="phone" placeholder="999-999-9999">
+                        <span class="error">*</span><!-- Error message will be inserted here -->
+                    </div>
+                </fieldset>
+                <div>
+                    <input type="submit" id="submit" value="Submit Request">
+                </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div> <!-- End of Row -->
+  </div> <!-- End of Container -->
+
+  <!-- Footer -->
+  <div class="mt-5 p-4 bg-dark text-white text-center Footer">
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+   <!-- jQuery first, then jQuery Validation, then your custom JS --> 
+   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+   <script src="reservation.js"></script>
+</body>
+</html>
+
