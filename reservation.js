@@ -6,7 +6,7 @@ $(document).ready(() => {
     // Move focus to the “Arrival date” text box when the page loads
     $("#arrival_date").focus();
 
-    // Define the custom pattern method for the arrival_date field
+    // Define the custom pattern method for the arrival_date field, basically so I can use 00/00/00 as a field 
     $.validator.addMethod("pattern", function (value, element, regex) {
         return this.optional(element) || regex.test(value);
     }, "Please enter a valid value.");
